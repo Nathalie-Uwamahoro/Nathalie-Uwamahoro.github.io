@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    
+    <!-- Link to main styles -->
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/responsive.css" | relative_url }}"> <!-- Add a responsive CSS file -->
+
+    <style>
+        /* Basic styles for spacing */
+        .site-nav a {
+            margin-right: 15px;
+        }
+
+        /* Responsive Navigation Menu */
+        @media screen and (max-width: 768px) {
+            .site-nav {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .site-nav a {
+                display: block;
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="wrapper">
+            <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+
+            <!-- Mobile-Friendly Navigation -->
+            <nav class="site-nav">
+                <a href="{{ "/home/" | relative_url }}">Home</a>
+                <a href="{{ "/cv/" | relative_url }}">CV</a>
+                <a href="{{ "/news/" | relative_url }}">News</a>
+                <a href="{{ "/projects/" | relative_url }}">Projects</a>
+                <a href="{{ "/publications/" | relative_url }}">Publications</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="wrapper">
+            {{ content }}
+        </div>
+    </main>
+
+</body>
+</html>

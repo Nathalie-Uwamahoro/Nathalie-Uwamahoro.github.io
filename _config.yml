@@ -1,0 +1,28 @@
+title: "Nathalie Uwamahoro"
+description: "PhD Candidate in Electrical and Computer Engineering"
+author:
+  name: "Nathalie Uwamahoro"
+  email: "nuwamaho@syr.edu"
+  social:
+    github: "https://github.com/Nathalie-Uwamahoro"
+    linkedin: "https://www.linkedin.com/in/nathalie-uwamahoro"
+    # scholar: "https://scholar.google.com/citations?user=YourGoogleScholarID"
+
+baseurl: "" # Change this to match the repository name
+url: "https://Nathalie-Uwamahoro.github.io/" # Correct GitHub Pages URL
+
+theme: minima # Or use another theme
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      navigation:
+        - title: "Home"
+          url: "/home/"
+        - title: "Projects"
+          url: "/projects/"
+        - title: "Publications"
+          url: "/publications/"
+        - title: "CV"
+          url: "/cv/"
